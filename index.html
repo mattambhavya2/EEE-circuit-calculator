@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEE Circuit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>⚡ EEE CIRCUIT CALCULATOR</h1>
+    <p class="subtitle">Electrical & Electronics Engineering Calculator</p>
+
+    <div class="calculator">
+
+        <label>Select Calculation</label>
+
+        <select id="calculation">
+            <option value="ohm">Ohm's Law</option>
+            <option value="power">Power</option>
+            <option value="series">Series Circuit</option>
+            <option value="parallel">Parallel Circuit</option>
+            <option value="kcl">KCL</option>
+            <option value="kvl">KVL</option>
+            <option value="open">Open Circuit</option>
+            <option value="short">Short Circuit</option>
+            <option value="rc">RC Circuit</option>
+            <option value="rlc">RLC Circuit</option>
+        </select>
+
+        <div id="inputs"></div>
+
+        <button onclick="calculate()">CALCULATE</button>
+
+        <button class="clear" onclick="clearCalculator()">CLEAR</button>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
